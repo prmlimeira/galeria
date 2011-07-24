@@ -1,0 +1,37 @@
+<!-- Codigo da pagina pura html -->
+
+<html>
+
+<title>Administração da galeria de imagens</title>
+<head><b>Administração da galeria de imagens</b></head><hr>
+  
+  <script type="text/javascript">
+    function Relacionar(){
+     with(document.enviaFOto.ALBUM){
+       options[options.length] = new Option("default",options.length);
+     }
+    }
+  </script>
+  
+ <body>
+  
+  <script>Relacionar()</script>
+  <!-- Configuracao de album -->
+  <div> 
+  </div> 
+
+
+   <!-- Envio de fotos -->
+   <div>
+    <form name="enviaFoto" action="envia_foto.php" method="post" enctype="multipart/form-data">
+       Album:<br>
+       <select onChange="<script>Relacionar()</script>" name="ALBUM"><option value="">selecione album</select><br>
+       Foto:<br>
+       <input type="file" name="ARQUIVO" id="IMG"><br>
+       <input type="submit" value="Enviar"><input type="reset" value="Apagar"><br>
+    </form>
+   </div>
+
+  </body>
+
+</html
