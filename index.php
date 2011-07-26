@@ -49,6 +49,8 @@
  
        if(document.forms[0].ALBUM.selectedIndex == 1){
          criarAlbum();
+       }else{
+         document.all.ALBUM_NOME.value = document.all.ALBUM.options[document.forms[0].ALBUM.selectedIndex].text;
        }
 
      }
@@ -63,6 +65,7 @@
        var pos_w = centro_w-150;
  
        window.open("novo_album.htm", "Novo Album","width=300,height=200,top="+pos_h+",left="+pos_w);
+       window.location.reload(); //reload na pagina
 
      }
 
@@ -100,9 +103,10 @@
    <div>
     <form name="enviaFoto" action="envia_foto.php" method="post" enctype="multipart/form-data">
        Album:<br>
-       <select name="ALBUM" id="ALBUM" onmouseup="Relacionar();"><option></option></select><br>
+       <select name="ALBUM" id="ALBUM" onmouseup="Relacionar();"></select><br>
        Foto:<br>
        <input type="file" name="ARQUIVO" id="IMG"><br>
+       <input type="hidden" name="ALBUM_NOME" value="">
        <input type="submit" value="Enviar"><input type="reset" value="Apagar"><br>
     </form>
    </div>

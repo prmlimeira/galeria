@@ -2,8 +2,10 @@ TODO
 
 1. Criar como ler os albuns disponiveis 
    atraves da integração javascript/php
-   e deixar disponiveis no select; ***FEITO***
+   e deixar disponiveis no select. ***FEITO***
 
+2. Colocar para as fotos irem para os albums certos. ***FEITO***
 
-2. Criação da parte pública; --> sera subdividida
-3. Criação da segurança para a parte privada. --> sera subdividida     
+3. Criação da parte pública; --> sera subdividida
+
+4. Criação da segurança para a parte privada. --> sera subdividida     

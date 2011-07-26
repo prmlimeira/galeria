@@ -9,7 +9,7 @@
  }
 
  if(!is_dir("imagens/$nome_do_album")){
-   mkdir("imagens/$nome_do_album",0755);
+   mkdir("imagens/$nome_do_album",0777);
    print "<script>window.alert('Album criado com sucesso!');window.close();</script>";
  }
  else{
