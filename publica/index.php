@@ -26,12 +26,13 @@
         
         //Pega o primeiro nome de foto e transforma em string (implode)
         $nome_foto_album = implode("|", array_slice(scandir($dir."/".$album),2,1) );
-        $caminho_foto_album = $dir."/".$album."/".$nome_foto_album;      
+        $caminho_foto_album = $dir."/".$album."/".$nome_foto_album;
+        $caminho_album = $dir."/".$album;      
 
         if($numero_de_albums < 5){
 
 		  $script = "javascript:var nome_do_album = document.getElementById('NOME_DO_ALBUM'); nome_do_album.innerHTML = '$album';";
-          print "<td onmouseover=\"".$script."\">"."<a href='caminho_do_album.php'><img src=".$caminho_foto_album." height='90' width='90'></a></td>";
+          print "<td onmouseover=\"".$script."\">"."<a href='visualizacao_album.php?NOME_ALBUM=$album'><img src=".$caminho_foto_album." height='90' width='90'></a></td>";
           $numero_de_albums++;
           
         }else{
