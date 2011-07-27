@@ -13,7 +13,7 @@
 <head><center>Galeria de Imagens</center></head><hr>
 
   <body>
-   <center> <table name="ALBUMS">
+   <center><p id="NOME_DO_ALBUM">ALBUMS</p> <table name="ALBUMS">
    
     <?php
        
@@ -29,8 +29,9 @@
         $caminho_foto_album = $dir."/".$album."/".$nome_foto_album;      
 
         if($numero_de_albums < 5){
-          
-          print "<td>"."<a href='caminho_do_album.php'><img src=".$caminho_foto_album." height='90' width='90'></a></td>";
+
+		  $script = "javascript:var nome_do_album = document.getElementById('NOME_DO_ALBUM'); nome_do_album.innerHTML = '$album';";
+          print "<td onmouseover=\"".$script."\">"."<a href='caminho_do_album.php'><img src=".$caminho_foto_album." height='90' width='90'></a></td>";
           $numero_de_albums++;
           
         }else{

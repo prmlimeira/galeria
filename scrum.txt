@@ -9,7 +9,7 @@ TODO
 3. Criação da parte pública; --> sera subdividida
    3.1 apresentação dos albums;
      3.1.1 apresentação das imagens dos albums; ***FEITO***
-     3.1.2 mostrar nome do album com javascript e onmouseover;
+     3.1.2 mostrar nome do album com javascript e onmouseover; ***FEITO***
    3.2 apresentação das fotos no album;  
  
 4. Criação da segurança para a parte privada. --> sera subdividida     
